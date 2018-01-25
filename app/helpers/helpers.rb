@@ -1,8 +1,8 @@
 class Helpers
 
-  def self.current_user(session_hash)
+  def self.current_user(session)
     # binding.pry
-    session_hash["id"] = User.find_by["id"]
+    session["id"] = User.find_by["id"]
 
 
   end
