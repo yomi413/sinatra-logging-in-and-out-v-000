@@ -8,7 +8,7 @@
   <body id="page-top">
 
     <% if @user.current_user(session) != @user.is_logged_in?(session) %>
-      <a href="/error"></a>
+      <a href="/error">Error</a>
     <% else %>
       <p><%= @user.username %></p>
       <p><%= @user.balance %></p>
