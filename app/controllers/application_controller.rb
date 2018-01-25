@@ -23,7 +23,6 @@ class ApplicationController < Sinatra::Base
     @new_user = User.find_by_id(session[:user_id])
     if @new_user
       erb :account
-      # binding.pry
     else
       erb :error
     end
