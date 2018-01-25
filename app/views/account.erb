@@ -7,16 +7,17 @@
   </head>
   <body id="page-top">
 
-     <p><%= @user.username %></p>
+     <!-- <p><%= @user.username %></p> -->
 
-     <a href="/logout">Log Out</a>
+     
 
-     <% if User.is_logged_in? %>
-       <p><%= User.current_user(session) %></p>
+     <% if @user.is_logged_in? %>
+       <p><%= @user.current_user(session) %></p>
        <!-- <p><%= @user.balance %></p> -->
      <!-- <% else %> -->
 
      <% end %>
 
+     <a href="/logout">Log Out</a>
   </body>
 </html>
