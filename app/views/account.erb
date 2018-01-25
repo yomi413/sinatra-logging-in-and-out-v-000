@@ -7,6 +7,12 @@
   </head>
   <body id="page-top">
 
+    <% if @user.is_logged_in?(session) %>
+      <p><%= @user.username %></p>
+      <p><%= @user.balance %></p>
+
+
+
      <!-- <p><%= @user.username %></p> -->
 
 
