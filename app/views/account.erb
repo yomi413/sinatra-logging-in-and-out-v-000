@@ -12,10 +12,10 @@
 
 
      <% if @user.is_logged_in? %>
-       <% @user.current_user(session) %>
-       <!-- <p><%= @user.balance %></p> -->
+       <p><%= @user.username %></p>
+       <p><%= @user.balance %></p>
      <% else %>
-
+       
      <% end %>
 
      <a href="/logout">Log Out</a>
