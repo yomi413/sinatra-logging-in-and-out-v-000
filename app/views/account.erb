@@ -12,8 +12,8 @@
      <a href="/logout">Log Out</a>
 
      <% if User.is_logged_in? %>
-       <p><%= @user.username %></p>
-       <p><%= @user.balance %></p>
+       <p><%= User.current_user %></p>
+       <!-- <p><%= @user.balance %></p> -->
      <% else %>
         <a href="/"></a>
      <% end %>
