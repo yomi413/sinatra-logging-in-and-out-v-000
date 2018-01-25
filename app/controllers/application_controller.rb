@@ -11,7 +11,6 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/login' do
-    puts params
     @user = User.find_by(params[:username])
     session[:id] = @user.id
     erb :index
