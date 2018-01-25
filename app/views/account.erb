@@ -9,6 +9,9 @@
 
     <% if @user.current_user(session) != @user.is_logged_in?(session) %>
       <a href="/error"></a>
+    <% else %>
+      <p><%= @user.username %></p>
+      <p><%= @user.balance %></p>
 
     <% end %>
     <a href="/logout">Log Out</a>
