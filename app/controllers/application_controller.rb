@@ -13,7 +13,7 @@ class ApplicationController < Sinatra::Base
   post '/login' do
     puts params
     @user = User.find_by(params[:username])
-    # session[:id] = @user.id
+    session[:id] = @user.id
     redirect to '/account'
   end
 
