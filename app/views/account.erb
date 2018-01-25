@@ -10,8 +10,9 @@
     <% if Helpers.is_logged_in?(session) %>
       <p><%= @user.username %></p>
       <p><%= @user.balance %></p>
-      <a href="/logout">Log Out</a>
+
     <% end %>
+    <a href="/logout">Log Out</a>
 
 
 
