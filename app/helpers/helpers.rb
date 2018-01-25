@@ -8,4 +8,6 @@ class Helpers
     !!self.current_user(session) ? true : false
   end
 
+  binding.pry
+
 end
