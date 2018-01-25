@@ -11,5 +11,10 @@
 
      <a href="/logout">Log Out</a>
 
+     <% if User.is_logged_in? %>
+       <p><%= @user.username %></p>
+       <p><%= @user.balance %></p>
+     <% end %>
+
   </body>
 </html>
