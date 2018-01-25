@@ -5,7 +5,7 @@ class Helpers
   end
 
   def self.is_logged_in?(session)
-    !self.current_user(session) ? true : false
+    !!self.current_user(session) ? true : false
     # if session["user_id"]
     #   true
     # else
