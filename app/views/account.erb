@@ -8,8 +8,8 @@
   <body id="page-top">
 
     <% if Helpers.is_logged_in?(session) %>
-      <p><%= Helpers.current_user(session).username %></p>
-      <p><%= Helpers.current_user(session).balance %></p>
+      <h1>Welcome <%= Helpers.current_user(session).username %></h1>
+      <h3>Your balance: <%= Helpers.current_user(session).balance %></h3>
     
       <a href="/logout">Log Out</a>
     <% end %>
