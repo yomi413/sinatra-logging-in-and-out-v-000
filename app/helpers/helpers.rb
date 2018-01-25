@@ -2,7 +2,7 @@ class Helpers
 
   def self.current_user(session_hash)
     # binding.pry
-    session_hash[:user_id] = User.find_by["id"]
+    session_hash["id"] = User.find_by["id"]
 
 
   end
