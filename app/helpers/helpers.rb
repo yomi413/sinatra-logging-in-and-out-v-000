@@ -2,7 +2,8 @@ class Helpers
 
   def self.current_user(session_hash)
     # binding.pry
-    session_hash[:user_id]
+    user = session_hash[:user_id]
+    user
 
   end
 
