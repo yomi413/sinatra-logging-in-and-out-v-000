@@ -2,7 +2,7 @@ class Helpers
 
   def self.current_user(session)
     # binding.pry
-    session["id"] = User.find_by["id"]
+    session["user_id"] = User.
 
 
   end
