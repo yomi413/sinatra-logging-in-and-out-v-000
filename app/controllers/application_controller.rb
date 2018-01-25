@@ -14,9 +14,9 @@ class ApplicationController < Sinatra::Base
     puts params
     @user = User.find_by(username: params["username"])
     # binding.pry
-    if @user.is_logged_in?(session)
+    # if @user.is_logged_in?(session)
       session[:user_id] = @user.id
-    end
+    # end
     redirect to '/account'
   end
 
