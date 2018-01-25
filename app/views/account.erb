@@ -14,6 +14,8 @@
      <% if User.is_logged_in? %>
        <p><%= @user.username %></p>
        <p><%= @user.balance %></p>
+     <% else %>
+        <a href="/login"></a>
      <% end %>
 
   </body>
